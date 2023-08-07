@@ -7,13 +7,13 @@
   font-family: "Poppins", sans-serif;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .form-login {
@@ -23,11 +23,16 @@ body{
   padding: 10px;
   border-radius: 20px;
   width: 400px;
-  /* width: 100%; */
+  position: relative;
+  height: 100%;
 }
 
-.form-login .error{
-  
+.form-login .error {
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.356);
+  border-radius: 20px;
+  padding: 10px;
+  color: #0000008e;
 }
 
 .form-login input {
@@ -39,9 +44,18 @@ body{
   font-size: 15px;
 }
 
+.form-login i {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  cursor: pointer;
+  color: #656897;
+  /* transform: translate(-50%); */
+}
+
 .form-login input[type="file"] {
-    border-radius: 20px;
-    cursor: pointer;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .form-login input[type="submit"] {
@@ -54,13 +68,17 @@ body{
   cursor: pointer;
 }
 
+.form-login span {
+  text-align: center;
+}
+
 @media screen and (max-width: 500px) {
-    body{
-        display: flex;
-        /* margin-top: -40px; */
-        top: 0;
-    }
-    .form-login{
-        width: 90%;
-    }
+  body {
+    display: flex;
+    /* margin-top: -40px; */
+    /* top: 0; */
+  }
+  .form-login {
+    width: 90%;
+  }
 }
